@@ -1,0 +1,167 @@
+body{
+    background: #3a3a3a;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 90vh;
+}
+
+
+/* Desenhando o toca disco */
+
+.tocadisco{
+    position: relative;
+    background: linear-gradient(to right, #808080, #b6b6b6);
+    height: 275px;
+    width: 400px;
+    padding: 70px;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.2);
+}
+
+.baseagulha{
+    position: absolute;
+    top: 35px;
+    left: 337px;
+    background: #525252;
+    border-radius: 10px;
+    height: 35px;
+    width: 35px;
+}
+
+.agulha{
+    position: absolute;
+    top: 50px;
+    left: 350px;
+    background: #fff;
+    transform-origin: top;
+    transform: rotate(var(--angle));
+    height: 200px;
+    width: 10px;
+    border-radius: 10px;
+    box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.2);
+    animation: none;
+    z-index: 1;
+}
+
+.disco{
+    border-radius: 300px;
+    background: #1e0022;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transform: rotate(var(--angle));
+    animation: none;
+}
+
+.linhabranca{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 120px;
+    background: #d4d4d4;
+    height: 120px;
+    width: 120px;
+}
+
+.faixa{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 100px;
+    background: #00582f;
+    height: 100px;
+    width: 100px;
+}
+
+.textbox{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    translate: -50%;
+    width: 50px;
+    height: 10px;
+    background: transparent;
+    border: 1px solid rgb(20, 112, 20);
+    text-align: center;
+}
+
+.middle{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 20px;
+    background: #808080;
+    height: 20px;
+    width: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) inset;
+}
+
+/* Botoes */
+
+.media{
+    position: absolute;
+    top: 350px;
+    left: 350px;
+    background: url('https://t3.ftcdn.net/jpg/06/14/84/44/360_F_614844460_hj8xuoq1c6ylEoyjpjZ9KlX50ayy00St.jpg');
+    background-repeat: repeat;
+    width: 150px;
+    height: 40px;
+}
+
+.button{
+    display: inline-block;
+    margin-top: 5px;
+    width: 50px;
+    height: 30px;
+    background: #7c7c7c;
+    border: none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3), -10px -10px 10px rgba(134, 134, 134, 0.2);
+}
+
+.button:hover{
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2) inset, -10px -10px 10px rgba(134, 134, 134, 0.2) inset;
+}
+
+.play{
+    margin-right: 10px;
+}
+
+#player{
+    width: 1px; 
+    height: 1px; 
+    opacity: 0; 
+    pointer-events: none; 
+}
+
+/* Animacoes  */
+
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+@keyframes agulha {
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 20deg;
+    }
+}

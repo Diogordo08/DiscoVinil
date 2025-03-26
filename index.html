@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tocadisco">
+            <div class="baseagulha"></div>
+            <div class="agulha"></div>
+            <div class="disco">
+                <div class="linhabranca">
+                    <div class="faixa">
+                        <input type="text" id="linkyt" class="textbox" placeholder="URL">
+                        <div class="middle"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="media">
+                <button class="button play" onclick="playAudio()">PLAY</button>
+                <button class="button stop" onclick="stopAudio()">STOP</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="player"></div>
+
+    <script src="script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
