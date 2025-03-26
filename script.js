@@ -19,8 +19,8 @@ function playAudio(){
         return;
     }
     else{
-        agulha.style.animation = "4s agulha alternate infinite";
-        disco.style.animation = "3s spin linear infinite"
+        agulha.style.animation = "5s agulha alternate infinite";
+        disco.style.animation = "5s spin linear infinite"
     }
     
     if (player) {

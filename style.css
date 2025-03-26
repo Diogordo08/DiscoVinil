@@ -21,7 +21,8 @@ body{
 
 .tocadisco{
     position: relative;
-    background: linear-gradient(to right, #808080, #b6b6b6);
+    background: url('https://t3.ftcdn.net/jpg/06/14/84/44/360_F_614844460_hj8xuoq1c6ylEoyjpjZ9KlX50ayy00St.jpg');
+    background-repeat: repeat;
     height: 275px;
     width: 400px;
     padding: 70px;
@@ -44,7 +45,7 @@ body{
     left: 350px;
     background: #fff;
     transform-origin: top;
-    transform: rotate(var(--angle));
+    transform:rotate(var(--angle));
     height: 200px;
     width: 10px;
     border-radius: 10px;
@@ -55,7 +56,7 @@ body{
 
 .disco{
     border-radius: 300px;
-    background: #1e0022;
+    background: #383838;
     height: 300px;
     width: 300px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -80,7 +81,7 @@ body{
     left: 50%;
     translate: -50% -50%;
     border-radius: 100px;
-    background: #00582f;
+    background: rgb(66, 0, 47);
     height: 100px;
     width: 100px;
 }
@@ -93,7 +94,7 @@ body{
     width: 50px;
     height: 10px;
     background: transparent;
-    border: 1px solid rgb(20, 112, 20);
+    border: 1px solid rgb(112, 20, 20);
     text-align: center;
 }
 
@@ -106,7 +107,7 @@ body{
     background: #808080;
     height: 20px;
     width: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) inset;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.5), 10px 10px 10px rgba(255, 255, 255, 0.3) inset;
 }
 
 /* Botoes */
@@ -115,8 +116,7 @@ body{
     position: absolute;
     top: 350px;
     left: 350px;
-    background: url('https://t3.ftcdn.net/jpg/06/14/84/44/360_F_614844460_hj8xuoq1c6ylEoyjpjZ9KlX50ayy00St.jpg');
-    background-repeat: repeat;
+    background: linear-gradient(to left, rgb(128, 128, 128), rgb(182, 182, 182));
     width: 150px;
     height: 40px;
 }
@@ -124,15 +124,17 @@ body{
 .button{
     display: inline-block;
     margin-top: 5px;
-    width: 50px;
     height: 30px;
-    background: #7c7c7c;
-    border: none;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3), -10px -10px 10px rgba(134, 134, 134, 0.2);
+    width: 50px;
+    background: rgba(68, 68, 68, 0.95);
+    border: 2px solid rgba(0, 0, 0, 1);
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3), 10px 10px 10px rgba(255, 255, 255, 0.5) inset;
+    position: relative;
+    z-index: 1;
 }
 
 .button:hover{
-    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2) inset, -10px -10px 10px rgba(134, 134, 134, 0.2) inset;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.2) inset, -10px -10px 10px rgba(255, 255, 255, 0.2) inset;
 }
 
 .play{
