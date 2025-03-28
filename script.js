@@ -4,6 +4,10 @@ let player;
 let agulha = document.getElementsByClassName("agulha")[0]
 let disco = document.getElementsByClassName("disco")[0]
 
+function onYouTubeIframeAPIReady(){
+
+}
+
 function getVideoId(url){
     const regExp = /^.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/;
     const match = url.match(regExp);

@@ -73,6 +73,7 @@ body{
     translate: -50% -50%;
     border: 4px double rgb(100, 100, 100);
     border-radius: 100%;
+    z-index: -1;
 }
 
 .disco::after{
